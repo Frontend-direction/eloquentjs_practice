@@ -180,7 +180,7 @@ function optimizedRobot({place, parcels}, route) {
     })
     
     function score(route) {
-      return (route.pickUp ? 1 : 0,5) - route.length;
+      return (route.pickUp ? 1 : 0.5) - route.length;
     }
     
     route = routes.reduce((acc, el) => score(acc) > score(el) ? acc : el).route
