@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb129a62-5101-4841-8a43-dc6f99d7bec6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/12.Asynchronous_Prog/promiseAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.Asynchronous_Prog/skalpel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11.modules/modular-robot.js.ts" beforeDir="false" afterPath="$PROJECT_DIR$/11.modules/roads-module.js.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Project_Robot/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/7.Project_Robot/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -33,6 +33,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.17.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.20.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -66,11 +68,17 @@
       <workItem from="1572378342843" duration="72000" />
       <workItem from="1573888225947" duration="1802000" />
       <workItem from="1575310640999" duration="41000" />
-      <workItem from="1625464989862" duration="1138000" />
+      <workItem from="1625464989862" duration="5137000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2618" y="237" key="#JavaScript" timestamp="1625474864961">
+      <screen x="1920" y="8" width="1920" height="1040" />
+    </state>
+    <state x="2618" y="237" key="#JavaScript/0.0.1920.1040/1920.8.1920.1040@1920.8.1920.1040" timestamp="1625474864961" />
   </component>
 </project>
