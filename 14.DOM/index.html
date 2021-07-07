@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+
+    <h1>Mountains</h1>
+
+    <div id="mountains"></div>
+
+    <script>
+      const MOUNTAINS = [
+        {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+        {name: "Everest", height: 8848, place: "Nepal"},
+        {name: "Mount Fuji", height: 3776, place: "Japan"},
+        {name: "Vaalserberg", height: 323, place: "Netherlands"},
+        {name: "Denali", height: 6168, place: "United States"},
+        {name: "Popocatepetl", height: 5465, place: "Mexico"},
+        {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+      ];
+
+      function createTable(data) {
+        const table = document.createElement('table');
+        const headers = Object.keys(data[0]);
+
+        const tableHeaders = createRow(headers, 'th');
+        const bodyRows = createBody(data);
+
+        table.appendChild(tableHeaders);
+
+        for(let i = 0; i < bodyRows.length; i++) {
+            table.append(bodyRows[i]);
+        }
+
+        return table;
+      }
+
+      function createRow(rowData, htmlCellEl) {
+        const headersWrapper = document.createElement('tr');
+        for(let i = 0; i < rowData.length; i++) {
+          const th = document.createElement(htmlCellEl);
+          const newContent = document.createTextNode(rowData[i]);
+          th.appendChild(newContent);
+          headersWrapper.appendChild(th);
+        }
+
+        return headersWrapper;
+      }
+
+      function createBody(data) {
+        let elArr = [];
+
+        for(let i = 0; i < data.length; i++) {
+          const row = createRow(Object.values(data[i]), 'td');
+          elArr.push(row);
+        }
+
+        return elArr;
+      }
+
+
+      document.getElementById('mountains').appendChild(createTable(MOUNTAINS));
+    </script>
+    </body>
+</html>

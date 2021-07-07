@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb129a62-5101-4841-8a43-dc6f99d7bec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/12.Asynchronous_Prog/promiseAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.Asynchronous_Prog/skalpel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14.DOM/byTagName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14.DOM/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.modules/graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/11.Modules/graph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.modules/roads-module.js.js" beforeDir="false" afterPath="$PROJECT_DIR$/11.Modules/roads-module.js.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,10 +37,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.17.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.20.15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test/interview" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,7 +71,9 @@
       <workItem from="1572378342843" duration="72000" />
       <workItem from="1573888225947" duration="1802000" />
       <workItem from="1575310640999" duration="41000" />
-      <workItem from="1625464989862" duration="5137000" />
+      <workItem from="1625464989862" duration="11122000" />
+      <workItem from="1625649035588" duration="2846000" />
+      <workItem from="1625654204447" duration="614000" />
     </task>
     <servers />
   </component>
@@ -76,9 +81,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="761" y="27" key="#HTML" timestamp="1625653869706">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="27" key="#HTML/0.0.1920.1040/1920.8.1920.1040@0.0.1920.1040" timestamp="1625653869706" />
     <state x="2618" y="237" key="#JavaScript" timestamp="1625474864961">
       <screen x="1920" y="8" width="1920" height="1040" />
     </state>
     <state x="2618" y="237" key="#JavaScript/0.0.1920.1040/1920.8.1920.1040@1920.8.1920.1040" timestamp="1625474864961" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1625654246990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.8.1920.1040@0.0.1920.1040" timestamp="1625654246990" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1625654537302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.8.1920.1040@0.0.1920.1040" timestamp="1625654537302" />
   </component>
 </project>
