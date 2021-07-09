@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <textarea id="code">return "hi";</textarea>
+  <button id="button">Run</button>
+  <pre id="output"></pre>
+  <script>
+    const btn = document.getElementById('button');
+    const textArea = document.getElementById('code');
+    const output = document.getElementById('output');
+
+    btn.addEventListener('click', (e) => {
+      try {
+        output.textContent = evaluateInput(textArea.value);
+      } catch (e) {
+        output.textContent = e.message;
+      }
+      
+    })
+
+    function evaluateInput(codeTxt) {
+      return Function(codeTxt)()
+    }
+  </script>
+</body>
+</html>
