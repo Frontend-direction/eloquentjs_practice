@@ -13,15 +13,82 @@
   <script>
      const width = 30;
      const height = 15;
+     const checkBoxes = [];
 
      function createGrid(width, height) {
-      for (let i = 0; i < height; height++) {
-        for(let j = 0; j < width; width++) {
+       const gridNode = document.getElementById('grid');
+
+      for (let y = 0; y < height; y++) {
+        for(let x = 0; x < width; x++) {
           const checkBox = document.createElement('input');
           checkBox.type = 'checkbox';
+          gridNode.appendChild(checkBox);
+          checkBoxes.push(checkBox);
         }
+        gridNode.appendChild(document.createElement("br"));
       }
      }
+    
+     function getCheckVal(grid) {
+      return grid.map(({ checked }) => checked);
+     }
+
+     function setCheckValue(grid) {
+        grid.forEach((val, i ) => checkBoxes[i].checked = val);
+     }
+
+    function countNeighbors(grid, width, height, x, y) {
+      const xStart = Math.max(x - 1, 0);
+      const yStart = Math.max(y - 1, 0);
+      const xFinish = Math.min(x + 1, width - 1);
+      const yFinish = Math.min(y + 1, height - 1);
+      let count = 0;
+      
+      for(let y1 = yStart; y1 <= yFinish; y1++) {
+        for(let x1 = xStart; x1 <= xFinish; x1++){
+          if((x1 !== x || y1 !== y) && grid[x1 + y1 * width]) {
+            count++;
+          }
+        }
+      }
+      return count;
+    }
+
+    function nextGeneration(grid, width, height) {
+      const newGrid = new Array(width * height);
+
+      for(let y = 0; y < height; y++) {
+        for(let x = 0; x < width; x++) {
+          const neighbors = countNeighbors(grid, width, height, x, y);
+          const cellIndex = x + y * width;
+
+          if (neighbors < 2 || neighbors > 3) {
+            newGrid[cellIndex] = false;
+          } else if(neighbors === 2) {
+            newGrid[cellIndex] = grid[cellIndex];
+          } else {
+            newGrid[cellIndex] = true;
+          }
+        }
+      }
+
+      return newGrid;
+    }
+
+    function turn() {
+      setCheckValue(nextGeneration(getCheckVal(checkBoxes), width, height));
+    }
+
+    function init() {
+      const btn = document.getElementById('next');
+      btn.addEventListener('click', () => {
+        turn();
+      });
+
+      createGrid(width, height);
+    }
+
+    init();
   </script>
 </body>
 </html>
