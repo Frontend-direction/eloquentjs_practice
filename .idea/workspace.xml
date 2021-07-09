@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb129a62-5101-4841-8a43-dc6f99d7bec6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19.Pixel_Editor/code/chapter/19_paint.js" beforeDir="false" afterPath="$PROJECT_DIR$/19.Pixel_Editor/code/chapter/19_paint.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <workItem from="1625464989862" duration="11122000" />
       <workItem from="1625649035588" duration="2846000" />
       <workItem from="1625654204447" duration="3408000" />
-      <workItem from="1625739934084" duration="8818000" />
+      <workItem from="1625739934084" duration="10007000" />
     </task>
     <servers />
   </component>
