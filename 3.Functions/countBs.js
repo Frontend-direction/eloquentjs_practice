@@ -3,4 +3,4 @@ countChar = (str, char) => {
 }
 
 
-console.log(countChar("kakkerlak", "k"))
+console.log(countChar("kakkerlak", "k"));
